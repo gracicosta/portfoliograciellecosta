@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gracielle Costa">
+    <meta name="description" content="Projeto desenvolvido atráves da primeira aula do programa Elas+ Tech da Ada">
+    <title>Projeto Curriculo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="logotipo-contact">
+        <a href="https://api.whatsapp.com/send/?phone=5511930264311&text&type=phone_number&app_absent=0" target="_blank">
+            <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/whatsapp--v1.png" alt="whatsapp--v1" />
+        </a>
+    </div>
+
+
+    <div class="header-nav-mobile">
+        <div class="logo-nav-mobile"><img src="images/Vector.png" alt="logotipo"></div>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    
+        <div class="overlay" id="overlay"></div>
+    
+        <nav class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Gracielle</h2>
+                <p>Seja Bem-vindo!</p>
+            </div>
+    
+            <ul class="nav-menu-mobile">
+                <li><a href="#hero"  class="ancor-mobile">Home</a></li>
+                <li><a href="#project" class="ancor-mobile">Projeto</a></li>
+                <li><a href="#experiencia" class="ancor-mobile">Experiência</a></li>
+                <li><a href="#skills" class="ancor-mobile">Skills</a></li>
+                <li><a href="#sobre" class="ancor-mobile">Sobre mim</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    
+    <!-- Campo: header -->
+    <header>
+        <!-- Menu principal -->
+        <nav class="nav-menu">
+            <div class="img-logotipo"><img src="images/Vector.png" alt="logomarca" ></div>
+            <ul class="list-nav">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#project">Projetos</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+            </ul>
+            
+            <a href="contact.html" class="button-icon"><img src="images/icon-chat.png" alt="icone de contato"></a>
+        </nav>
+    </header>
+
+    <!-- Campo: Main -->
+    <main>
+        <section id="hero">
+            <article class="article-home">
+                <p>Olá, eu sou Gracielle<span>.</span></p>
+                <h1 class="title"><span>Front</span>end</h1>
+                <p class="title">Developer</p>
+                <p>Amante de gatos, pixel art e desenvolvimento web. Transformo ideias em interfaces e alguns pixels de carinho.</p>
+                <div class="buttons-style">
+                    <a href="contact.html" class="primary" type="submit" onclick="irPara('contact.html'); return false;">Entre em contato</a>
+                    <a href="#project" class="outline">Projetos</a>
+                </div>
+            </article>
+            <article class="article-frame">
+                <div class="frame-perfil">
+                    <img src="images/Ellipse 26.png" alt="foto do perfil de Gracielle Costa" class="image-perfil">
+                    <img src="images/Frame 89.png" alt="frame" class="frame">
+                </div>
+            </article>
+        </section>
+
+
+        <section id="project">
+            <h2>Projetos<span>.</span></h2>
+
+            <section class="column">
+                <article>
+                    <img src="images/pexels-joshsorenson-1714208.jpg" alt="Captura de tela do projeto" class="img-project">
+                    <div class="link-project">
+                        <h3>Projeto em andamento</h3>
+                        <a href="#" aria-label="Ver projeto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
+                </article>
+                
+                <article class="min-size">
+                    <img src="images/pexels-joshsorenson-1714208.jpg" alt="Captura de tela do projeto" class="img-project">
+                    <div class="link-project">
+                        <h3>Projeto em andamento</h3>
+                        <a href="#" aria-label="Ver projeto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
+                </article>
+            </section>
+
+            <section class="column">
+                <article class="min-size">
+                    <img src="images/pexels-joshsorenson-1714208.jpg" alt="Captura de tela do projeto" class="img-project">
+                    <div class="link-project">
+                        <h3>Projeto em andamento</h3>
+                        <a href="#" aria-label="Ver projeto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
+                </article>
+                
+                <article>
+                    <img src="images/pexels-joshsorenson-1714208.jpg" alt="Captura de tela do projeto" class="img-project">
+                    <div class="link-project">
+                        <h3>Projeto em andamento</h3>
+                        <a href="#" aria-label="Ver projeto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" style="width: 100%; height: 100%;">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
+                </article>
+            </section>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiência<span>.</span></h2>
+
+            <article class="experience">
+                <div class="menu-summary">
+                    <ul class="tabs-list" id="tabsList">
+                        <li class="tab-item" data-tab="apple">Apple</li>
+                        <li class="tab-item" data-tab="microsoft">Microsoft</li>
+                        <li class="tab-item" data-tab="spotify">Spotify</li>
+                        <li class="tab-item" data-tab="stripe">Stripe</li>
+                        <li class="tab-item" data-tab="webflow">Webflow</li>
+                    </ul>
+                </div>
+
+                <div class="content-summary">
+                    <div class="tab-content" id="apple">
+                        <h4 class="job-title">Engenheiro <span>na Apple</span></h4>
+                        <p class="job-period">Setembro - Dezembro de 2017</p>
+                        <ul class="job-description">
+                            <li><img src="images/check.svg" alt="check"> Desenvolvi recursos inovadores para a plataforma iOS, melhorando a experiência do usuário.</li>
+                            <li><img src="images/check.svg" alt="check"> Colaborei com equipes multifuncionais para entregar projetos dentro do prazo.</li>
+                            <li><img src="images/check.svg" alt="check"> Implementei testes automatizados para garantir a qualidade do código.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="microsoft">
+                        <h4 class="job-title">Engenheiro <span>na Microsoft</span></h4>
+                        <p class="job-period">Janeiro - Abril de 2018</p>
+                        <ul class="job-description">
+                            <li><img src="images/check.svg" alt="check"> Trabalhei em equipe para construir um site de marketing e uma plataforma de comércio eletrônico para a blistabloc, uma startup ambiciosa.</li>
+                            <li><img src="images/check.svg" alt="check"> Ajudou a consolidar a direção da marca Blistabloc, abrangendo tanto as embalagens quanto o site.</li>
+                            <li><img src="images/check.svg" alt="check"> Interagia com os clientes semanalmente, fornecendo conhecimento técnico especializado.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="spotify">
+                        <h4 class="job-title">Desenvolvedor <span>no Spotify</span></h4>
+                        <p class="job-period">Maio - Agosto de 2018</p>
+                        <ul class="job-description">
+                            <li><img src="images/check.svg" alt="check"> Criei funcionalidades para melhorar a descoberta de música na plataforma.</li>
+                            <li><img src="images/check.svg" alt="check"> Trabalhei com grandes volumes de dados para otimizar algoritmos de recomendação.</li>
+                            <li><img src="images/check.svg" alt="check"> Participei de revisões de código e mentorei desenvolvedores juniores.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content" id="stripe">
+                        <h4 class="job-title">Engenheiro <span translate="no">na Stripe</span></h4>
+                        <p class="job-period">Setembro - Dezembro de 2018</p>
+                        <ul class="job-description">
+                            <li><img src="images/check.svg" alt="check"> Desenvolvi soluções de pagamento seguras e escaláveis para clientes globais.</li>
+                            <li><img src="images/check.svg" alt="check"> Implementei integrações com diversos gateways de pagamento.</li>
+                            <li><img src="images/check.svg" alt="check"> Garanti conformidade com padrões PCI-DSS e outras regulamentações.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content" id="webflow">
+                        <h4 class="job-title">Desenvolvedor <span translate="no">no Webflow</span></h4>
+                        <p class="job-period">Janeiro - Abril de 2019</p>
+                        <ul class="job-description">
+                            <li><img src="images/check.svg" alt="check"> Projetei e desenvolvi interfaces web responsivas e intuitivas.</li>
+                            <li><img src="images/check.svg" alt="check"> Utilizei as mais recentes tecnologias front-end para criar experiências fluidas.</li>
+                            <li><img src="images/check.svg" alt="check"> Colaborei com designers para transformar mockups em código funcional.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+
+            <article id="skills" class="skills">
+                <h2>Habilidades<span>.</span></h2>
+
+                <div class="space-flex">
+                    <div class="space-style">
+                        <h4 class="skills-title">Design de sites</h4>
+                        <p>Designer de UI/UX</p>
+                        <p>Design responsivo</p>
+                        <p>Wireframing</p>
+                        <p>Pesquisa de Usuários</p>
+                    </div>
+                    
+                    <div class="space-style">
+                        <h4 class="skills-title">Front-end</h4>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>JavaScript</p>
+                        <p>Git e GitHub</p>
+                    </div>
+                    
+                    <div class="space-style">
+                        <h4 class="skills-title">Back-end</h4>
+                        <p>Python</p>
+                        <p>Node.js</p>
+                        <p>MySQL</p>
+                    </div>
+
+                    <div class="space-style">
+                        <h4 class="skills-title">Habilidades interpessoais</h4>
+                        <p>Colaboração</p>
+                        <p>Compromisso</p>
+                        <p>Organização e foco</p>
+                        <p>Aprendizado contínuo</p>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="history" id="sobre">
+                <h2>Minha história<span>.</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptatem? Corporis at eius totam labore voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptatem? Corporis at eius totam labore voluptatem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptatem? Corporis at eius totam labore voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptatem? Corporis at eius totam labore voluptatem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptatem? Corporis at eius totam labore voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptatem? Corporis at eius totam labore voluptatem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptatem? Corporis at eius totam labore voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, voluptatem? Corporis at eius totam labore voluptatem.</p>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Campo: footer -->
+    <footer>
+        <img src="images/Vector.png" alt="logomarca" class="img-logotipo-footer">
+        <p>©2025 Gracielle Costa. Todos os direitos reservados.</p>
+        <div class="icon">
+            <a href="https://www.instagram.com/gracii_costa/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg></a>
+
+            <a href="https://www.linkedin.com/in/gracielle-costa-757264354/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+            </svg></a>
+
+            <a href="https://github.com/gracicosta" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
