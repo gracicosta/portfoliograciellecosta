@@ -992,7 +992,7 @@ footer > .icon {
     .column {
         display: flex;
         flex-direction: column;
-        gap: 70px;
+        gap: 60px;
         padding-left: 0;
         padding-top: 30px;
     }
@@ -1012,7 +1012,7 @@ footer > .icon {
     }
 
     .link-project > h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
 
@@ -1038,7 +1038,7 @@ footer > .icon {
     }
 
     .tab-item {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         border-top: 3px solid #ca8e8269;
         padding: 13px;
         border-left: none;
@@ -1074,7 +1074,7 @@ footer > .icon {
         border: 2px solid var(--color1);
         width: 100%;
         border-radius: 10px;
-        height: 180px;
+        height: 60%;
     }
 
     .space-style > h4 {
