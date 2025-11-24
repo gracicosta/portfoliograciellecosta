@@ -449,7 +449,8 @@ div.space-style {
 
 article.history > p {
     color: var(--color4);
-    padding: 16px 3px;
+    padding: 12px 3px;
+    line-height: 1.6;
 }
 
 
@@ -712,7 +713,6 @@ footer > .icon {
     .job-description {
         font-size: 1.2rem;
     }
-    
     
     .column article {
         gap: 30px;
