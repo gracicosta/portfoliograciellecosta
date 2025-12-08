@@ -1210,9 +1210,9 @@ footer > .icon {
     }
 
     .logotipo-contact img {
-        width: 100%;
-        height: auto;
         display: block;
+        width: 85%;
+        margin: auto;
     }
 
     .logotipo-contact {
