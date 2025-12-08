@@ -83,8 +83,8 @@ h2 > span {
 /* HEADER - NAV */
 
 .logotipo-contact span > img {
-    width: 100%;
-    height: auto;
+    width: 85%;
+    margin: auto;
     display: block;
 }
 
