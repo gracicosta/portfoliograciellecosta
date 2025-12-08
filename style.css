@@ -18,7 +18,6 @@
 
 .darkmode {
     --bg-fundo: #070b1d;
-    --base-variant: #101425;
     --color4: #eaeaea; 
     --color5: black;
     --color6: white;
@@ -561,7 +560,7 @@ footer > .icon {
 }
 
 .email-ancor:hover {
-    color: var(--black);
+    color: var(--color4);
 }
 
 .icon-envelope {
@@ -582,7 +581,7 @@ footer > .icon {
 }
 
 .svg-icon:hover {
-    fill: var(--black);
+    fill: var(--color4);
 }
 
 @keyframes fadeIn {
