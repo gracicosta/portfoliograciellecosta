@@ -62,21 +62,24 @@ h2 > span {
 #theme span:last-child,
 #theme-mobile span:last-child,
 #theme-logo span:last-child,
-#theme-logo-footer span:last-child {
+#theme-logo-footer span:last-child,
+#theme-logo-mobile span:last-child {
     display: none;
 }
 
 .darkmode #theme span:first-child,
 .darkmode #theme-mobile span:first-child,
 .darkmode #theme-logo span:first-child,
-.darkmode #theme-logo-footer span:first-child {
+.darkmode #theme-logo-footer span:first-child,
+.darkmode #theme-logo-mobile span:first-child {
     display: none;
 }
 
 .darkmode #theme span:last-child,
 .darkmode #theme-mobile span:last-child,
 .darkmode #theme-logo span:last-child,
-.darkmode #theme-logo-footer span:last-child {
+.darkmode #theme-logo-footer span:last-child,
+.darkmode #theme-logo-mobile span:last-child {
     display: block;
 }
 
