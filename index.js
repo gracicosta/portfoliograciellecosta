@@ -7,6 +7,30 @@ const navLinks = document.querySelectorAll('.nav-menu-mobile a, .nav-menu a');
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContents = document.querySelectorAll('.tab-content');
 
+let darkmode = localStorage.getItem('darkmode');
+const themes = document.querySelectorAll('#theme, #theme-mobile');
+
+//Darkmode 
+const ativarDarkMode = () => {
+    document.body.classList.add('darkmode');
+    localStorage.setItem('darkmode', 'active');
+}
+
+const desativarDarkMode = () => {
+    document.body.classList.remove('darkmode');
+    localStorage.setItem('darkmode', null);
+}
+
+if(darkmode === 'active') ativarDarkMode();
+
+themes.forEach(btn => {
+    btn.addEventListener('click', () => {
+        darkmode = localStorage.getItem('darkmode');
+        darkmode !== 'active' ? ativarDarkMode() : desativarDarkMode();
+    });
+});
+
+
 // Função para transição de página
 function irPara(pagina) {
     document.body.classList.add('fade-out');

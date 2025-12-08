@@ -49,7 +49,10 @@
     <header>
         <!-- Menu principal -->
         <nav class="nav-menu">
-            <div class="img-logotipo"><img src="images/Vector.png" alt="logomarca"></div>
+            <div class="img-logotipo" id="theme-logo">
+                <span><img src="images/Vector.png" alt="logomarca"></span>
+                <span><img src="images/vectorDark.png" alt="logomarca"></span>
+            </div>
             <ul class="list-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">Projetos</a></li>
@@ -57,7 +60,11 @@
                 <li><a href="index.html">Skills</a></li>
                 <li><a href="index.html">Sobre mim</a></li>
             </ul>
-            <a href="#" class="button-icon"><img src="images/icon-chat.png" alt="icone de contato"></a>
+            <button id="theme" class="button-icon">
+                <span><img src="images/sunny.png" alt="icone de sol para modo claro"></span>
+            
+                <span><img src="images/moon.png" alt="icone lua para modo escuro"></span>
+            </button>
         </nav>
     </header>
     <main>

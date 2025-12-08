@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
+    transition: background-color 0.5s ease, color 0.1s ease, border-color 0.3s ease, fill 0.5s ease, stroke 0.5s ease;
 }
 
 :root {
@@ -10,6 +12,16 @@
     --color3: #7A958F;
     --color4: #2E2E2E;
     --bg-fundo: #F8F8FF;
+    --color5: white;
+    --color6: black;
+}
+
+.darkmode {
+    --bg-fundo: #070b1d;
+    --base-variant: #101425;
+    --color4: #eaeaea; 
+    --color5: black;
+    --color6: white;
 }
 
 html {
@@ -34,6 +46,7 @@ h2 {
     font-size: 4.5rem;
     padding: 30px 0;
     font-weight: 700;
+    color: var(--color6);
 }
 
 h2 > span {
@@ -44,9 +57,32 @@ h2 > span {
     display: none;
 }
 
+/*Modo escuro*/
+
+#theme span:last-child,
+#theme-mobile span:last-child,
+#theme-logo span:last-child,
+#theme-logo-footer span:last-child {
+    display: none;
+}
+
+.darkmode #theme span:first-child,
+.darkmode #theme-mobile span:first-child,
+.darkmode #theme-logo span:first-child,
+.darkmode #theme-logo-footer span:first-child {
+    display: none;
+}
+
+.darkmode #theme span:last-child,
+.darkmode #theme-mobile span:last-child,
+.darkmode #theme-logo span:last-child,
+.darkmode #theme-logo-footer span:last-child {
+    display: block;
+}
+
 /* HEADER - NAV */
 
-.logotipo-contact img {
+.logotipo-contact span > img {
     width: 100%;
     height: auto;
     display: block;
@@ -86,38 +122,45 @@ header > nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.185);
     z-index: 1000;
     padding: 16px 56px;
+    transition: background-color .1s ease;
 }
 
 .img-logotipo {
     width: 70px;
 }
 
-.img-logotipo > img {
+.img-logotipo span > img {
     cursor: pointer;
     width: 50%;
 }
 
-.button-icon > img {
+.button-icon {
+    border: none;
+    background-color: transparent;
+}
+
+#theme span img {
     border: none;
     border-radius: 100%;
     padding: 4.8px;
     background-color: var(--color1);
     cursor: pointer;
-    transition: transform .10s ease-in-out;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
 
-.button-icon > img:hover {
+.button-icon span img:hover {
     background-color: var(--color2);
 }
 
-.button-icon > img:active {
+.button-icon span img:active {
     transform: translateY(1px) scale(0.99);
 }
 
-.button-icon > img {
+.button-icon span img {
     width: 35px;
     height: 35px;
 }
+
 
 .list-nav, li {
     list-style: none;
@@ -224,7 +267,7 @@ a.outline {
     text-decoration: none;
     font-size: 0.8rem;
     text-align: center;
-    color: black;
+    color: var(--color6);
     transition: transform .10s ease-in-out;
 }
 
@@ -247,12 +290,12 @@ a.primary:hover {
 
 a.outline {
     background-color: var(--bg-fundo);
-    border: 2px solid black;
+    border: 2px solid var(--color6);
 }
 
 a.outline:hover {
-    color: #fff;
-    background-color: black;
+    color: var(--color5);
+    background-color: var(--color6);
     transition: .4s;
 }
 
@@ -263,6 +306,10 @@ section#project {
     flex-direction: column;
     gap: 30px;
     padding: 80px 10px 80px;
+}
+
+h3 {
+    color: var(--color6);
 }
 
 .column {
@@ -352,7 +399,7 @@ article.experience {
     list-style: none;
     font-size: 1.4rem;
     color: var(--color4);
-    border-left: 3px solid #ca8e8269;
+    border-left: 3px solid var(--color1);
     padding: 16px 40px;
     font-weight: 500;
     cursor: pointer;
@@ -362,14 +409,14 @@ article.experience {
 .tab-item:hover {
     border-color: var(--color1);
     color: var(--color1);
-    background-color: #f5f3ff;
+    background-color: var(--bg-fundo);
 }
 
 .tab-item.active {
     color: var(--color1);
     font-weight: 600;
     border-left-color: var(--color1);
-    background-color: #f5f3ff;
+    background-color: var(--bg-fundo);
 }
 
 .content-summary {
@@ -389,6 +436,7 @@ article.experience {
 .job-title {
     font-size: 1.4rem;
     font-weight: 500;
+    color: var(--color6);
 }
 
 .job-title > span {
@@ -510,7 +558,7 @@ footer > .icon {
 }
 
 .email-ancor:hover {
-    color: black;
+    color: var(--black);
 }
 
 .icon-envelope {
@@ -523,7 +571,7 @@ footer > .icon {
 }
 
 .icon-envelope:hover {
-    border-color: black;
+    border-color: var(--black);
 }
 
 .svg-icon {
@@ -531,7 +579,7 @@ footer > .icon {
 }
 
 .svg-icon:hover {
-    fill: black;
+    fill: var(--black);
 }
 
 @keyframes fadeIn {
@@ -560,6 +608,16 @@ footer > .icon {
     }
 
     100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
         transform: rotate(360deg);
     }
 }
@@ -788,6 +846,10 @@ footer > .icon {
         overflow-x: hidden;
     }
 
+    .darkmode #theme-logo-footer {
+        display: none;
+    }
+
     h2 {
         font-size: 3rem;
         padding: 40px 0;
@@ -797,6 +859,11 @@ footer > .icon {
     
     header {
         display: none;
+    }
+
+    .button-icon span img {
+        width: 30px;
+        height: 30px;
     }
 
     .header-nav-mobile {
@@ -814,7 +881,7 @@ footer > .icon {
         width: 100%;
     }
 
-    .logo-nav-mobile > img {
+    .logo-nav-mobile span > img {
         width: 35px;
     }
 
@@ -874,7 +941,7 @@ footer > .icon {
         left: -300px;
         width: 280px;
         height: 100%;
-        background-color: #fff;
+        background-color: var(--bg-fundo);
         box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
         transition: left 0.3s ease;
         z-index: 999;
@@ -893,6 +960,7 @@ footer > .icon {
     
     .sidebar-header h2 {
         font-size: 1.5rem;
+        color: white;
     }
 
     .sidebar-header p {
