@@ -1,16 +1,16 @@
-// Elementos
 const menuToggle = document.getElementById('menuToggle');
 const sidebar = document.getElementById('sidebar');
 const overlay = document.getElementById('overlay');
-const navLinks = document.querySelectorAll('.nav-menu-mobile a, .nav-menu a');
+const navLinks = document.querySelectorAll('.menu-mobile a, .nav-main a');
 
 const tabItems = document.querySelectorAll('.tab-item');
 const tabContents = document.querySelectorAll('.tab-content');
 
-let darkmode = localStorage.getItem('darkmode');
-const themes = document.querySelectorAll('#theme, #theme-mobile');
 
-//Darkmode 
+// Função darkmode
+let darkmode = localStorage.getItem('darkmode');
+const themes = document.querySelectorAll('#themeMobileLogo, #themeMobileButton, #themeLogo, #themeMainButton, #themeLogoFooter');
+
 const ativarDarkMode = () => {
     document.body.classList.add('darkmode');
     localStorage.setItem('darkmode', 'active');
@@ -21,14 +21,14 @@ const desativarDarkMode = () => {
     localStorage.setItem('darkmode', null);
 }
 
-if(darkmode === 'active') ativarDarkMode();
+if (darkmode === 'active') ativarDarkMode();
 
 themes.forEach(btn => {
     btn.addEventListener('click', () => {
         darkmode = localStorage.getItem('darkmode');
         darkmode !== 'active' ? ativarDarkMode() : desativarDarkMode();
-    });
-});
+    })
+})
 
 
 // Função para transição de página
@@ -38,6 +38,8 @@ function irPara(pagina) {
         window.location.href = pagina;
     }, 400);
 }
+
+// Função para o menu sidebar
 
 function toggleMenu() {
     menuToggle.classList.toggle('active');
@@ -57,17 +59,17 @@ overlay.addEventListener('click', toggleMenu);
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         toggleMenu();
-    });
-});
+    })
+})
 
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && sidebar.classList.contains('active')) {
         toggleMenu();
     }
-});
+})
 
 tabItems.forEach(item => {
-    item.addEventListener('click', function () {
+    item.addEventListener('click', function() {
         tabItems.forEach(tab => tab.classList.remove('active'));
         tabContents.forEach(content => content.classList.remove('active'));
 
@@ -75,8 +77,8 @@ tabItems.forEach(item => {
 
         const tabId = this.getAttribute('data-tab');
         document.getElementById(tabId).classList.add('active');
-    });
-});
+    })
+})
 
 if (tabItems.length > 0) {
     tabItems[0].classList.add('active');

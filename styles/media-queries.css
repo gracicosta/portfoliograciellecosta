@@ -1,0 +1,598 @@
+@media (max-width: 1280px) {
+    section#hero {
+        gap: 5%;
+    }
+
+    .column-project {
+        gap: 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    header nav {
+        font-size: 1.2rem;
+    }
+
+    .contact-whatsapp {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .logotipo {
+        width: 60px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .logotipo span img {
+        width: 60%;
+    }
+
+    .nav-menu {
+        gap: 30px;
+    }
+
+    section#hero {
+        gap: 5%;
+    }
+
+    .image-space {
+        width: 50%;
+    }
+
+    .about-hero p {
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 5.3rem;
+    }
+
+    .column-project {
+        gap: 40px;
+    }
+
+    .project-min-size {
+        flex: 0 0 55%;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    header nav {
+        font-size: 0.8rem;
+        justify-content: space-between;
+    }
+
+    .logotipo {
+        display: flex;
+        align-items: center;
+
+        width: 50px;
+        height: 30px;
+    }
+
+    .logotipo span img {
+        width: 60%;
+    }
+
+    .nav-menu {
+        gap: 30px;
+    }
+
+    section#hero {
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .image-space {
+        width: 55%;
+    }
+
+    .image-hero {
+        height: 250px;
+        width: 250px;
+    }
+
+    .about-hero p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 0.9;
+    }
+
+    .column-project .project-min-size {
+        flex: 0 0 300px;
+    }
+
+    .column-project {
+        gap: 30px;
+    }
+
+    .column-project article {
+        gap: 30px;
+        width: 50%;
+    }
+
+    .img-project {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card-project a {
+        height: 23px;
+        width: 23px;
+    }
+
+    article.experience {
+        display: block;
+    }
+
+    .tabs-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tab-item {
+        font-size: 1.2rem;
+        border-top: 3px solid var(--color-primary);
+        padding: 35px;
+        border-left: none;
+    }
+    
+    .tab-item:hover {
+        border-color: var(--color-primary);
+        color: var(--color-primary);
+    }
+
+    .job-title {
+        font-size: 1.4rem;
+    }
+
+    .job-description {
+        font-size: 1.2rem;
+    }
+
+    article#skills {
+        padding: 40px 0;
+    }
+
+    .space-flex-skills {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .space-style-skills {
+        line-height: 1.8rem;
+        padding: 10px 20px;
+        border: 2px solid var(--color-primary);
+        width: 100%;
+        border-radius: 10px;
+        height: 180px;
+    }
+
+    .space-style-skills:hover {
+        background-color: var(--color-primary);
+        transition: .4s ease;
+        color: var(--color-paragraph);
+    }
+
+    .space-style-skills h4 {
+        color: var(--color-secondary);
+    }
+
+    .space-style-skills h4:hover {
+        color: var(--color-paragraph);
+    }
+
+    .space-style-skills p {
+        font-weight: 500;
+    }
+
+    footer {
+        padding: 0 10px 32px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer img {
+        width: 33px;
+        height: 30px;
+    }
+
+    .icon-footer {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 540px) {
+    
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .logotipo {
+        width: 30px;
+    }
+    
+    .darkmode #themeLogoFooter {
+        display: none;
+    }
+
+    h2 {
+        font: var(--font-mobile);
+        text-align: center;
+
+        padding: 40px 0;
+    }
+
+    .nav-main {
+        display: none;
+    }
+
+    .header-nav-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        padding: 15px 20px;
+
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        background-color: var(--bg-fundo);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.199);
+    }
+
+    .logotipo span img {
+        width: 35px;
+    }
+
+    .menu-toggle-mobile {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 30px;
+        height: 25px;
+
+        cursor: pointer;
+    }
+
+    .menu-toggle-mobile span {
+        width: 100%;
+        height: 3px;
+        border-radius: 3px;
+        transition: all 0.3s ease;
+        background-color: var(--color-paragraph);
+    }
+
+    .menu-toggle-mobile.active span:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    .menu-toggle-mobile.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle-mobile.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 998;
+    }
+
+    .overlay.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 280px;
+        height: 100%;
+        background-color: var(--bg-fundo);
+        box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
+        transition: left 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+        padding: 0 0;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .header-sidebar {
+        padding: 30px 20px;
+        width: 100%;
+        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+        color: white;
+    }
+
+    .header-sidebar h2 {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .header-sidebar p {
+        text-align: center;
+        font-size: medium;
+    }
+
+    .menu-mobile {
+        list-style: none;
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    header nav {
+        justify-content: flex-start;
+    }
+
+    .menu-mobile li a {
+        display: flex;
+        align-items: center;
+        padding: 15px 40px;
+        
+        color: var(--color-paragraph);
+        text-decoration: none;
+        font-size: 1.2rem;
+        border-left: 3px solid var(--color-primary);
+        background-color: #c27e7021;
+        font-weight: 500;
+        
+        transition: all 0.3s ease;
+    }
+
+    .menu-mobile li a:hover {
+        border-left-color: var(--color-secondary);
+    }
+
+    section#hero {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .image-space {
+        width: 100%;
+        height: 400px;
+    }
+
+    .image-hero {
+        height: 300px;
+        width: 300px;
+    }
+
+    .image-hero img:first-child {
+        
+        width: 80%;
+        height: 80%;
+    }
+
+    .image-hero img:last-child {
+        height: 300px;
+        width: 300px;
+    }
+
+    .about-hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 20px 0;
+    }
+
+    section#hero article:first-of-type p {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-hero p span {
+        color: var(--color-primary);
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 1.1;
+        text-align: center;
+        padding-bottom: 20px;
+        letter-spacing: 0.2rem;
+    }
+
+    .buttons-hero {
+        gap: 30px;
+    }
+
+    section#project {
+        padding: 50px 0;
+        gap: 20px;
+    }
+
+    .column-project article {
+        width: 100%;
+    }
+
+    .column-project {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        padding-left: 0;
+        padding-top: 30px;
+    }
+
+    .project-min-size {
+        flex: 0;
+    }
+
+    .img-project {
+        width: 250px;
+        height: 250px;
+    }
+
+    .card-project {
+        justify-content: space-between;
+        padding-right: 15px;
+    }
+
+    .card-project h3 {
+        font-size: 1.2rem;
+    }
+
+    .card-project a {
+        height: 25px;
+        width: 25px;
+    }
+
+    section#experience {
+        padding: 30px 0px;
+    }
+
+    .tabs-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tab-item {
+        font-size: 0.8rem;
+        border-top: 3px solid #ca8e8269;
+        padding: 13px;
+        border-left: none;
+    }
+
+    .tab-item:hover {
+        border-color: var(--color-primary);
+        color: var(--color-primary);
+    }
+
+    .job-title {
+        font-size: 1.4rem;
+    }
+
+    .job-description {
+        font-size: 1rem;
+    }
+
+    article#skills {
+        padding: 40px 0;
+    }
+
+    .space-flex-skills {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .space-style-skills {
+        line-height: 1.8rem;
+        padding: 10px 20px;
+        border: 2px solid var(--color-primary);
+        width: 100%;
+        border-radius: 10px;
+        height: 60%;
+    }
+
+    .space-style-skills:hover{
+        background-color: var(--color-primary);
+        transition: .4s ease;
+        color: var(--color-paragraph);
+    }
+
+    .space-style-skills:hover h4{
+        color: var(--color-paragraph);
+    }
+
+    .space-style-skills p {
+        font-weight: 500;
+    }
+
+    article#history {
+        padding-top: 30px;
+    }
+
+
+    article#history p {
+        color: var(--color-paragraph);
+        font-size: 1rem;
+        padding: 15px 0;
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 30px;
+    }
+
+    footer .logotipo img {
+        display: none;
+    }
+
+    footer p {
+        width: 300px;
+        padding: 0;
+    }
+
+    footer .icon-footer {
+        display: flex;
+        gap: 32px;
+    }
+
+    .icon-footer a {
+        width: 48px;
+        height: 27px;
+        stroke: var(--color-paragraph);
+    }
+
+    .icon-footer a:hover {
+        stroke: var(--color-primary);
+    }
+}

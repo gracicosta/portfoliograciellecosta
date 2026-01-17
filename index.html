@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> 
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gracielle Costa">
-    <meta name="description" content="Projeto desenvolvido atráves da primeira aula do programa Elas+ Tech da Ada">
-    <title>Projeto Curriculo</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Projeto portfolio desenvolvido junto com a Ada Tech, programa Elas+ Tech">
+    <title>Portfolio Gracielle</title>
+
+    <link rel="stylesheet" href="styles/index.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,306 +16,371 @@
 </head>
 <body>
 
-    <div class="logotipo-contact">
-        <a href="https://api.whatsapp.com/send/?phone=5511930264311&text&type=phone_number&app_absent=0" target="_blank">
-            <img width="24" height="24" src="images/whatsapp.svg" alt="whatsapp--v1"/>
-        </a>
-    </div>
+    <div class="container">
+        <!-- Botão que direciona ao meu whatsapp pessoal para contato -->
+        <div class="contact-whatsapp">
+            <a href="https://api.whatsapp.com/send/?phone=5511930264311&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                <img width="24" height="24" src="images/whatsapp.svg" alt="whatsapp--v1" />
+            </a>
+        </div>
+        
+        <!-- Campo: Header -->
+        <header>
 
 
-    <div class="header-nav-mobile">
-        <div class="logo-nav-mobile" id="theme-mobile">
-            <span><img src="images/Vector.png" alt="logomarca"></span>
-            <span><img src="images/vectorDark.png" alt="logomarca"></span>
-        </div>
-        <div class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    
-        <div class="overlay" id="overlay"></div>
-    
-        <nav class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <button class="button-icon" id="theme-mobile">
+            <!-- Campo: Header mobile -->
+            <div class="header-nav-mobile">
+                <!--Logotipo-->
+                <div class="logotipo" id="themeMobileLogo">
+                    <span><img src="images/Vector.png" alt="logomarca"></span>
+                    <span><img src="images/vectorDark.png" alt="logomarca"></span>
+                </div>
+            
+                <!-- Botão para acionar o menu - mobile -->
+                <div class="menu-toggle-mobile" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            
+                <!-- Overlay (sobreposição) - para fazer o menu toggle -->
+                <div class="overlay" id="overlay"></div>
+            
+                <!-- Menu navegação mobile - barra lateral (sidebar) -->
+                <nav class="sidebar" id="sidebar">
+                    <!-- Header da barra lateral -->
+                    <div class="header-sidebar">
+                        <!-- Botão do darkmode -->
+                        <button type="button" class="button-darkmode" id="themeMobileButton">
+                            <span><img src="images/sunny.svg" alt="icone de sol para modo claro"></span>
+                            <span><img src="images/moon.svg" alt="icone lua para modo escuro"></span>
+                        </button>
+                        <h2 class="sidebar-title">Gracielle</h2>
+                        <p>Seja Bem-vindo!</p>
+                    </div>
+            
+            
+                    <!-- Menu navegação do header -->
+                    <ul class="menu-mobile">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#project">Projetos</a></li>
+                        <li><a href="#experience">Experiência</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#sobre">Sobre mim</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <!-- Menu principal -->
+            <nav class="nav-main">
+                <div class="logotipo" id="themeLogo">
+                    <span><img src="images/Vector.png" alt="logomarca"></span>
+                    <span><img src="images/vectorDark.png" alt="logomarca"></span>
+                </div>
+        
+                <ul class="nav-menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#project">Projetos</a></li>
+                    <li><a href="#experience">Experiência</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                </ul>
+        
+                <button type="button" class="button-darkmode" id="themeMainButton">
                     <span><img src="images/sunny.svg" alt="icone de sol para modo claro"></span>
-                
                     <span><img src="images/moon.svg" alt="icone lua para modo escuro"></span>
                 </button>
-                <h2 class="h2-sidebar">Gracielle</h2>
-                <p>Seja Bem-vindo!</p>
-            </div>
-    
-            <ul class="nav-menu-mobile">
-                <li><a href="#hero"  class="ancor-mobile">Home</a></li>
-                <li><a href="#project" class="ancor-mobile">Projeto</a></li>
-                <li><a href="#experiencia" class="ancor-mobile">Experiência</a></li>
-                <li><a href="#skills" class="ancor-mobile">Skills</a></li>
-                <li><a href="#sobre" class="ancor-mobile">Sobre mim</a></li>
-            </ul>
-        </nav>
-    </div>
-    
-    
-    <!-- Campo: header -->
-    <header>
-        <!-- Menu principal -->
-        <nav class="nav-menu">
-            <div class="img-logotipo" id="theme-logo">
+            </nav>
+        </header>
+        
+        
+        <!-- Campo: Main -->
+        <main>
+        
+            <section id="hero"> <!--Section principal do programa-->
+                <article class="about-hero">
+                    <p>Olá, eu sou Gracielle<span>.</span></p>
+                    <h1><span>Front</span>end Developer</h1>
+                    <p>Amante de gatos, pixel art e desenvolvimento web. Transformo ideias em interfaces e alguns pixels de carinho.</p>
+        
+                    <div class="buttons-hero">
+                        <a href="contact.html" class="primary" type="submit"
+                            onclick="irPara('contact.html'); return false;">Entre em contato</a>
+                        <a href="#project" class="outline">Projetos</a>
+                    </div>
+                </article>
+        
+                <article class="image-space">
+                    <div class="image-hero">
+                        <img src="images/foto-do-perfil.png" alt="foto do perfil de Gracielle Costa" class="image-profile">
+                        <img src="images/Frame 89.png" alt="frame" class="frame-profile">
+                    </div>
+                </article>
+            </section>
+        
+        
+            <!-- Campo: Projetos -->
+            <section id="project">
+                <h2>Projetos<span>.</span></h2>
+        
+                <!-- Coluna de projetos -->
+                <section class="column-project">
+                    <article> <!--Colocar um pseudo class ou element pra selecionar o segundo-->
+                        <img src="images/em-andamento.jpg" alt="Captura de tela do projeto" class="img-project">
+                        <div class="card-project">
+                            <h3>Projeto em andamento</h3>
+                            <a href="#" aria-label="Ver projeto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="width: 100%; height: 100%;">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
+                    </article>
+        
+        
+                    <article class="project-min-size">
+                        <img src="images/em-andamento.jpg" alt="Captura de tela do projeto" class="img-project">
+                        <div class="card-project">
+                            <h3>Projeto em andamento</h3>
+                            <a href="#" aria-label="Ver projeto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="width: 100%; height: 100%;">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
+                    </article>
+                </section>
+        
+                <section class="column-project">
+                    <article class="project-min-size"> <!--Colocar um pseudo class ou element pra selecionar o segundo-->
+                        <img src="images/em-andamento.jpg" alt="Captura de tela do projeto" class="img-project">
+                        <div class="card-project">
+                            <h3>Projeto em andamento</h3>
+                            <a href="#" aria-label="Ver projeto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="width: 100%; height: 100%;">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
+                    </article>
+        
+        
+                    <article>
+                        <img src="images/em-andamento.jpg" alt="Captura de tela do projeto" class="img-project">
+                        <div class="card-project">
+                            <h3>Projeto em andamento</h3>
+                            <a href="#" aria-label="Ver projeto">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    style="width: 100%; height: 100%;">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="7 7 17 7 17 17"></polyline>
+                                </svg>
+                            </a>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
+                    </article>
+                </section>
+            </section>
+        
+        
+            <!-- Campo: Experiência -->
+            <section id="experience">
+                <h2>Experiência<span>.</span></h2>
+        
+                <!-- Experiência -->
+                <article class="experience">
+                    <div class="menu-summary">
+                        <ul class="tabs-list" id="tabsList">
+                            <li class="tab-item" data-tab="ada">Ada</li>
+                            <li class="tab-item" data-tab="graber">Graber</li>
+                            <li class="tab-item" data-tab="climma">Climma</li>
+                            <li class="tab-item" data-tab="homecare">Enf.</li>
+                            <li class="tab-item" data-tab="voluntario">Voluntário</li>
+                        </ul>
+                    </div>
+        
+                    <div class="content-summary">
+                        <div class="tab-content" id="ada">
+                            <h4 class="job-title">Desenvolvimento <span>Front-end</span></h4>
+                            <p class="job-period">Outubro - Abril de 2026</p>
+                            <ul class="job-description">
+                                <li><img src="images/check.svg" alt="check"> Projeto Elas+ Tech desenvolvida pela Ada Tech e
+                                    conta com o apoio da CAIXA e Artemisia, incluindo aulas ao vivo, contéudos gravados,
+                                    mentorias e desenvolvimento de soft skills.</li>
+                                <li><img src="images/check.svg" alt="check"> Aprovada na trilha front-end.</li>
+                            </ul>
+                        </div>
+        
+                        <div class="tab-content" id="graber">
+                            <h4 class="job-title">Peter Graber - Auxiliar de <span>Atendimento</span></h4>
+                            <p class="job-period">Fevereiro 2024 - Até o momento</p>
+                            <ul class="job-description">
+                                <li><img src="images/check.svg" alt="check"> Realizo o agendamento de serviços e faço o cadastro
+                                    de clientes, garantindo organização e controle dos atendimentos.</li>
+                                <li><img src="images/check.svg" alt="check"> Auxilio na resolução de problemas e ofereço suporte
+                                    direto ao cliente, esclarecendo dúvidas e garantindo uma boa experiência. </li>
+                                <li><img src="images/check.svg" alt="check"> Administro a comunicação da empresa, incluindo
+                                    e-mails, ligações e demais canais de atendimento.</li>
+                            </ul>
+                        </div>
+        
+                        <div class="tab-content" id="climma">
+                            <h4 class="job-title">Clinica Climma - Auxiliar <span>Administrativo</span></h4>
+                            <p class="job-period">Abril 2023 - Setembro de 2023</p>
+                            <ul class="job-description">
+                                <li><img src="images/check.svg" alt="check"> Gestão e controle de documentos, além de prestar
+                                    atendimento e suporte aos pacientes.</li>
+                                <li><img src="images/check.svg" alt="check"> Agendamento de exames, consultas e cirurgias
+                                    hospitalares, garantindo organização e precisão nas rotinas da clínica.</li>
+                                <li><img src="images/check.svg" alt="check"> Controle de equipamentos e prontuários, mantendo
+                                    informações atualizadas e assegurando o bom fluxo dos processos internos.</li>
+                            </ul>
+                        </div>
+        
+                        <div class="tab-content" id="homecare">
+                            <h4 class="job-title">Atendimento Home Care - Auxiliar de <span translate="no">Enfermagem</span>
+                            </h4>
+                            <p class="job-period">Janeiro 2023 - Fevereiro de 2024</p>
+                            <ul class="job-description">
+                                <li><img src="images/check.svg" alt="check"> Atendimento domiciliar, realizando cuidados
+                                    técnicos de enfermagem e acompanhando a evolução do paciente com segurança e atenção.</li>
+                                <li><img src="images/check.svg" alt="check"> Administração de medicamentos, curativos, controle
+                                    de sinais vitais e suporte contínuo às necessidades do paciente e da família.</li>
+                                <li><img src="images/check.svg" alt="check"> Organização de prontuários, comunicação com a
+                                    equipe multidisciplinar e registro preciso das rotinas de cuidado para garantir um
+                                    atendimento eficiente e humanizado.</li>
+                            </ul>
+                        </div>
+        
+                        <div class="tab-content" id="voluntario">
+                            <h4 class="job-title">Trabalho Voluntário - Clínica de <span translate="no">Repouso</span></h4>
+                            <p class="job-period">Janeiro 2022 - Outubro de 2022</p>
+                            <ul class="job-description">
+                                <li><img src="images/check.svg" alt="check"> Atuei como voluntária oferecendo suporte aos
+                                    idosos, auxiliando nas rotinas diárias e proporcionando companhia e acolhimento.</li>
+                                <li><img src="images/check.svg" alt="check"> Apoiei a equipe de enfermagem em tarefas básicas de
+                                    cuidado, organização de ambientes e acompanhamento dos residentes durante atividades.</li>
+                                <li><img src="images/check.svg" alt="check"> Contribuí para o bem-estar dos pacientes por meio
+                                    de atenção individualizada, escuta ativa e auxílio nas necessidades imediatas de cada
+                                    residente.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+        
+                <!-- Skills -->
+                <article id="skills" class="skills">
+                    <h2>Habilidades<span>.</span></h2>
+        
+                    <div class="space-flex-skills">
+                        <div class="space-style-skills">
+                            <h4>Design de sites</h4>
+                            <p>Designer de UI/UX</p>
+                            <p>Design responsivo</p>
+                            <p>Wireframing</p>
+                            <p>Pesquisa de Usuários</p>
+                        </div>
+        
+                        <div class="space-style-skills">
+                            <h4>Front-end</h4>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JavaScript</p>
+                            <p>Git e GitHub</p>
+                        </div>
+        
+                        <div class="space-style-skills">
+                            <h4>Back-end</h4>
+                            <p>Python</p>
+                            <p>Node.js</p>
+                            <p>MySQL</p>
+                            <p>Java</p>
+                        </div>
+        
+                        <div class="space-style-skills">
+                            <h4>Habilidades interpessoais</h4>
+                            <p>Colaboração</p>
+                            <p>Compromisso</p>
+                            <p>Organização e foco</p>
+                            <p>Aprendizado contínuo</p>
+                        </div>
+                    </div>
+                </article>
+        
+                <!-- Minha historia -->
+                <article class="history" id="sobre">
+                    <h2>Minha história<span>.</span></h2>
+                    <p> Me chamo Gracielle, tenho 25 anos e sou estudante de Ciência da Computação na Uninter.
+                    <p>Atualmente atuo como desenvolvedora front-end em formação, caminhando para me tornar fullstack, e também
+                        tenho conhecimentos com inglês intermediários e design UX, algo que me ajuda a criar interfaces mais
+                        intuitivas e humanas.</p>
+                    <p>Minha jornada na área de tecnologia começou oficialmente em 2022, mas a verdade é que a paixão veio muito
+                        antes, desde criança sempre fui fascinada por computadores e por tudo o que envolve o mundo Tech.</p>
+                    <p>Antes disso, vim da área da saúde. Sou formada como técnica em enfermagem, atuei por um ano em home care
+                        e também realizei trabalho voluntário em uma clínica de repouso. Hoje, estou vivendo a minha transição
+                        de carreira, construindo meu caminho na tecnologia com dedicação e muita vontade de aprender.</p>
+                    <p>Amo animais, leitura, filmes, natação e estou sempre criando novos hobbies aleatórios conforme o momento.
+                        Minha curiosidade sempre foi uma forte característica minha. Por isso, mesmo antes de entrar no mundo
+                        Tech, fiz cursos por puro interesse, como auxiliar de veterinário, radiografia animal e banho e tosa.
+                        Sempre fui movida pela curiosidade, e isso me fez explorar áreas diferentes ao longo da minha vida.</p>
+                    <p>Tenho dois gatos, a Miauzinha e o Jorginho. Eles são minha alegria diária e enchem meus dias de companhia
+                        e carinho.</p>
+                </article>
+            </section>
+        </main>
+        
+        
+        <!-- Campo: Footer -->
+        <footer>
+            <div class="logotipo" id="themeLogoFooter">
                 <span><img src="images/Vector.png" alt="logomarca"></span>
                 <span><img src="images/vectorDark.png" alt="logomarca"></span>
             </div>
-            <ul class="list-nav">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#project">Projetos</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#sobre">Sobre mim</a></li>
-            </ul>
-            
-            <button class="button-icon" id="theme">
-                <span><img src="images/sunny.svg" alt="icone de sol para modo claro"></span>
-            
-                <span><img src="images/moon.svg" alt="icone lua para modo escuro"></span>
-            </button>
-        </nav>
-    </header>
-
-    <!-- Campo: Main -->
-    <main>
-        <section id="hero">
-            <article class="article-home">
-                <p>Olá, eu sou Gracielle<span>.</span></p>
-                <h1 class="title"><span>Front</span>end</h1>
-                <p class="title">Developer</p>
-                <p>Amante de gatos, pixel art e desenvolvimento web. Transformo ideias em interfaces e alguns pixels de carinho.</p>
-                <div class="buttons-style">
-                    <a href="contact.html" class="primary" type="submit" onclick="irPara('contact.html'); return false;">Entre em contato</a>
-                    <a href="#project" class="outline">Projetos</a>
-                </div>
-            </article>
-            <article class="article-frame">
-                <div class="frame-perfil">
-                    <img src="images/foto-do-perfil.png" alt="foto do perfil de Gracielle Costa" class="image-perfil">
-                    <img src="images/Frame 89.png" alt="frame" class="frame">
-                </div>
-            </article>
-        </section>
-
-
-        <section id="project">
-            <h2>Projetos<span>.</span></h2>
-
-            <section class="column">
-                <article>
-                    <img src="images/em-andamento.jpg" alt="Captura de tela do projeto" class="img-project">
-                    <div class="link-project">
-                        <h3>Projeto em andamento</h3>
-                        <a href="#" aria-label="Ver projeto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                                <line x1="7" y1="17" x2="17" y2="7"></line>
-                                <polyline points="7 7 17 7 17 17"></polyline>
-                            </svg></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
-                </article>
-                
-                <article class="min-size">
-                    <img src="images/em-andamento.jpg" alt="Captura de tela do projeto" class="img-project">
-                    <div class="link-project">
-                        <h3>Projeto em andamento</h3>
-                        <a href="#" aria-label="Ver projeto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                                <line x1="7" y1="17" x2="17" y2="7"></line>
-                                <polyline points="7 7 17 7 17 17"></polyline>
-                            </svg></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
-                </article>
-            </section>
-
-            <section class="column">
-                <article class="min-size">
-                    <img src="images/em-andamento.jpg" alt="Captura de tela do projeto" class="img-project">
-                    <div class="link-project">
-                        <h3>Projeto em andamento</h3>
-                        <a href="#" aria-label="Ver projeto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                                <line x1="7" y1="17" x2="17" y2="7"></line>
-                                <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
-                </article>
-                
-                <article>
-                    <img src="images/em-andamento.jpg" alt="Captura de tela do projeto" class="img-project">
-                    <div class="link-project">
-                        <h3>Projeto em andamento</h3>
-                        <a href="#" aria-label="Ver projeto"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" style="width: 100%; height: 100%;">
-                            <line x1="7" y1="17" x2="17" y2="7"></line>
-                            <polyline points="7 7 17 7 17 17"></polyline>
-                        </svg></a>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore esse natus doloremque.</p>
-                </article>
-            </section>
-        </section>
-
-        <section id="experiencia">
-            <h2>Experiência<span>.</span></h2>
-
-            <article class="experience">
-                <div class="menu-summary">
-                    <ul class="tabs-list" id="tabsList">
-                        <li class="tab-item" data-tab="ada">Ada</li>
-                        <li class="tab-item" data-tab="graber">Graber</li>
-                        <li class="tab-item" data-tab="climma">Climma</li>
-                        <li class="tab-item" data-tab="homecare">Enf.</li>
-                        <li class="tab-item" data-tab="voluntario">Voluntário</li>
-                    </ul>
-                </div>
-
-                <div class="content-summary">
-                    <div class="tab-content" id="ada">
-                        <h4 class="job-title">Desenvolvimento <span>Front-end</span></h4>
-                        <p class="job-period">Outubro - Abril de 2026</p>
-                        <ul class="job-description">
-                            <li><img src="images/check.svg" alt="check"> Projeto Elas+ Tech desenvolvida pela Ada Tech e conta com o apoio da CAIXA e Artemisia, incluindo aulas ao vivo, contéudos gravados, mentorias e desenvolvimento de soft skills.</li>
-                            <li><img src="images/check.svg" alt="check"> Aprovada na trilha front-end.</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-content" id="graber">
-                        <h4 class="job-title">Peter Graber - Auxiliar de <span>Atendimento</span></h4>
-                        <p class="job-period">Fevereiro 2024 - Até o momento</p>
-                        <ul class="job-description">
-                            <li><img src="images/check.svg" alt="check"> Realizo o agendamento de serviços e faço o cadastro de clientes, garantindo organização e controle dos atendimentos.</li>
-                            <li><img src="images/check.svg" alt="check"> Auxilio na resolução de problemas e ofereço suporte direto ao cliente, esclarecendo dúvidas e garantindo uma boa
-                            experiência. </li>
-                            <li><img src="images/check.svg" alt="check"> Administro a comunicação da empresa, incluindo e-mails, ligações e demais canais de atendimento.</li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-content" id="climma">
-                        <h4 class="job-title">Clinica Climma - Auxiliar <span>Administrativo</span></h4>
-                        <p class="job-period">Abril 2023 - Setembro de 2023</p>
-                        <ul class="job-description">
-                            <li><img src="images/check.svg" alt="check"> Gestão e controle de documentos, além de prestar atendimento e suporte aos pacientes.</li>
-                            <li><img src="images/check.svg" alt="check"> Agendamento de exames, consultas e cirurgias hospitalares, garantindo organização e precisão nas rotinas da clínica.</li>
-                            <li><img src="images/check.svg" alt="check"> Controle de equipamentos e prontuários, mantendo informações atualizadas e assegurando o bom fluxo dos processos
-                            internos.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tab-content" id="homecare">
-                        <h4 class="job-title">Atendimento Home Care - Auxiliar de <span translate="no">Enfermagem</span></h4>
-                        <p class="job-period">Janeiro 2023 - Fevereiro de 2024</p>
-                        <ul class="job-description">
-                            <li><img src="images/check.svg" alt="check"> Atendimento domiciliar, realizando cuidados técnicos de enfermagem e acompanhando a evolução do paciente com segurança e
-                            atenção.</li>
-                            <li><img src="images/check.svg" alt="check"> Administração de medicamentos, curativos, controle de sinais vitais e suporte contínuo às necessidades do paciente e da
-                            família.</li>
-                            <li><img src="images/check.svg" alt="check"> Organização de prontuários, comunicação com a equipe multidisciplinar e registro preciso das rotinas de cuidado para
-                            garantir um atendimento eficiente e humanizado.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="tab-content" id="voluntario">
-                        <h4 class="job-title">Trabalho Voluntário - Clínica de <span translate="no">Repouso</span></h4>
-                        <p class="job-period">Janeiro 2022 - Outubro de 2022</p>
-                        <ul class="job-description">
-                            <li><img src="images/check.svg" alt="check"> Atuei como voluntária oferecendo suporte aos idosos, auxiliando nas rotinas diárias e proporcionando companhia e
-                            acolhimento.</li>
-                            <li><img src="images/check.svg" alt="check"> Apoiei a equipe de enfermagem em tarefas básicas de cuidado, organização de ambientes e acompanhamento dos residentes
-                            durante atividades.</li>
-                            <li><img src="images/check.svg" alt="check"> Contribuí para o bem-estar dos pacientes por meio de atenção individualizada, escuta ativa e auxílio nas necessidades imediatas de cada residente.</li>
-                        </ul>
-                    </div>
-                </div>
-            </article>
-
-
-            <article id="skills" class="skills">
-                <h2>Habilidades<span>.</span></h2>
-
-                <div class="space-flex">
-                    <div class="space-style">
-                        <h4 class="skills-title">Design de sites</h4>
-                        <p>Designer de UI/UX</p>
-                        <p>Design responsivo</p>
-                        <p>Wireframing</p>
-                        <p>Pesquisa de Usuários</p>
-                    </div>
-                    
-                    <div class="space-style">
-                        <h4 class="skills-title">Front-end</h4>
-                        <p>HTML</p>
-                        <p>CSS</p>
-                        <p>JavaScript</p>
-                        <p>Git e GitHub</p>
-                    </div>
-                    
-                    <div class="space-style">
-                        <h4 class="skills-title">Back-end</h4>
-                        <p>Python</p>
-                        <p>Node.js</p>
-                        <p>MySQL</p>
-                    </div>
-
-                    <div class="space-style">
-                        <h4 class="skills-title">Habilidades interpessoais</h4>
-                        <p>Colaboração</p>
-                        <p>Compromisso</p>
-                        <p>Organização e foco</p>
-                        <p>Aprendizado contínuo</p>
-                    </div>
-                </div>
-            </article>
-
-
-            <article class="history" id="sobre">
-                <h2>Minha história<span>.</span></h2>
-                <p> Me chamo Gracielle, tenho 25 anos e sou estudante de Ciência da Computação na Uninter.
-                <p>Atualmente atuo como desenvolvedora front-end em formação, caminhando para me tornar fullstack, e também tenho conhecimentos com e inglês intermediário e design UX, algo que me ajuda a criar interfaces mais intuitivas e humanas.</p>
-                <p>Minha jornada na área de tecnologia começou oficialmente em 2022, mas a verdade é que a paixão veio muito antes, desde criança sempre fui fascinada por computadores e por tudo o que envolve o mundo Tech.</p>
-                <p>Antes disso, vim da área da saúde. Sou formada como técnica em enfermagem, atuei por um ano em home care e também realizei trabalho voluntário em uma clínica de repouso. Hoje, estou vivendo a minha transição de carreira, construindo meu caminho na tecnologia com dedicação e muita vontade de aprender.</p>
-                <p>Amo animais, leitura, filmes, natação e estou sempre criando novos hobbies aleatórios conforme o momento. Minha curiosidade sempre foi uma forte característica minha. Por isso, mesmo antes de entrar no mundo Tech, fiz cursos por puro interesse, como auxiliar de veterinário, radiografia animal e banho e tosa. Sempre fui movida pela curiosidade, e isso me fez explorar áreas diferentes ao longo da minha vida.</p>
-                <p>Tenho dois gatos, a Miauzinha e o Jorginho. Eles são minha alegria diária e enchem meus dias de companhia e carinho.</p>
-            </article>
-        </section>
-
-    </main>
-
-    <!-- Campo: footer -->
-    <footer>
-        <div class="img-logotipo" id="theme-logo-footer">
-            <span><img src="images/Vector.png" alt="logomarca"></span>
-            <span><img src="images/vectorDark.png" alt="logomarca"></span>
-        </div>
-        <p>©2025 Gracielle Costa. Todos os direitos reservados.</p>
-        <div class="icon">
-            <a href="https://www.instagram.com/gracii_costa/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg></a>
-
-            <a href="https://www.linkedin.com/in/gracielle-costa-757264354/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-            </svg></a>
-
-            <a href="https://github.com/gracicosta" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
-        </div>
-    </footer>
+            <p>©2025 Gracielle Costa. Todos os direitos reservados.</p>
+            <div class="icon-footer">
+                <a href="https://www.instagram.com/gracii_costa/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+        
+                <a href="https://www.linkedin.com/in/gracielle-costa-757264354/" target="_blank" rel="noopener noreferrer"
+                    title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+        
+                <a href="https://github.com/gracicosta" target="_blank" rel="noopener noreferrer" title="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 100%; height: 100%;">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+        </footer>
+    </div>
 
     <script src="index.js"></script>
 </body>

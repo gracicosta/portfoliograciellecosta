@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    /* Transição das cores na página para ficar mais suave */
+    transition: 
+        background-color 0.5s ease,
+        color 0.1s ease,
+        border-color 0.3s ease,
+        fill 0.5s ease,
+        stroke 0.5s ease;
+}
+
+:root {
+    --color-primary: #CA8E82;
+    --color-secondary: #C27E70;
+    --color-blue: #7A958F;
+    --color-paragraph: #2E2E2E;
+    --bg-fundo: #F8F8FF;
+    --white-black: #ffffff;
+    --black-white: #000000;
+
+    --font-family: 'Roboto', sans-serif;
+    --text-lg: 700 6rem/1 var(--font-family);
+    --text-md: 700 4.5rem/1.5 var(--font-family);   
+    --text-sm: 700 1.4rem/0.5 var(--font-family);
+    --text: 0.8rem/0.5 var(--font-family);
+    --text-button: 0.9rem/1 var(--font-family);
+    --text-mobile: 1.2rem/0.5 var(--font-family);
+    --text-project: 400 1rem/1.5 var(--font-family);
+    --font-mobile: 700 3rem var(--font-family); 
+}
+
+.darkmode {
+    --bg-fundo: #070b1d;
+    --color-paragraph: #eaeaea;
+    --white-black: #000000;
+    --black-white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth; /*Para rolagem de pagina mais suave, quando clicado em um link*/
+}
+
+body {
+    width: 100vw;
+
+    overflow-x: hidden;
+    background-color: var(--bg-fundo);
+    opacity: 1; /*Visivel || Controla a transparencia de um elemento de 0 a 1*/
+
+    font-family: var(--font-family);
+    transition: opacity 2s ease;
+}
+
+body.fade-out {
+    opacity: 0; /*Totalmente invisivel*/
+}
+
+.container {
+    padding-inline: 35px;
+    margin-inline: auto;
+    max-width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+/* Global */
+
+.header-nav-mobile {
+    display: none; /*Desabilitando a nav mobile no modo laptop*/
+}
+
+/* Modo escuro */
+
+#themeMainButton span:last-child,
+#themeMobileLogo span:last-child,
+#themeMobileButton span:last-child,
+#themeLogo span:last-child,
+#themeLogoFooter span:last-child {
+    display: none;
+    /* opacity: 0;
+    visibility: hidden;
+    position: absolute; */
+}
+
+.darkmode #themeMainButton span:first-child,
+.darkmode #themeMobileLogo span:first-child,
+.darkmode #themeMobileButton span:first-child,
+.darkmode #themeLogo span:first-child,
+.darkmode #themeLogoFooter span:first-child {
+    display: none;
+    /* opacity: 0;
+    visibility: hidden;
+    position: absolute; */
+}
+
+.darkmode #themeMainButton span:last-child,
+.darkmode #themeMobileLogo span:last-child,
+.darkmode #themeMobileButton span:last-child,
+.darkmode #themeLogo span:last-child,
+.darkmode #themeLogoFooter span:last-child {
+    display: block;
+    /* opacity: 1;
+    visibility: visible;
+    position: static; */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    70% {
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

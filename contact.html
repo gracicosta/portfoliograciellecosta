@@ -1,112 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gracielle Costa">
-    <meta name="description" content="Projeto desenvolvido atráves da primeira aula do programa Elas+ Tech da Ada">
-    <title>Página de Contato</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <meta name="description" content="Projeto portfolio desenvolvido junto com a Ada Tech, programa Elas+ Tech">
+    <title>Portfolio Gracielle</title>
+    <link rel="stylesheet" href="styles/index.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="images/favicon.png">
 </head>
 <body>
 
-    <div class="logotipo-contact">
-        <a href="https://api.whatsapp.com/send/?phone=5511930264311&text&type=phone_number&app_absent=0" target="_blank">
-            <img width="24" height="24" src="images/whatsapp.svg"alt="whatsapp--v1" />
-        </a>
-    </div>
+    <div class="container">
+        <!-- Botão que direciona ao meu whatsapp pessoal para contato -->
 
-    <div class="header-nav-mobile">
-        <div class="logo-nav-mobile" id="theme-logo-mobile">
-            <span><img src="images/Vector.png" alt="logomarca"></span>
-            <span><img src="images/vectorDark.png" alt="logomarca"></span>
-        </div>
-        <div class="menu-toggle" id="menuToggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    
-        <div class="overlay" id="overlay"></div>
-    
-        <nav class="sidebar" id="sidebar">
-            <div class="sidebar-header">
-                <button class="button-icon" id="theme-mobile">
+        <header>
+        
+            <!-- Campo: Header mobile -->
+            <div class="header-nav-mobile">
+                <!--Logotipo-->
+                <div class="logotipo" id="themeMobileLogo">
+                    <span><img src="images/Vector.png" alt="logomarca"></span>
+                    <span><img src="images/vectorDark.png" alt="logomarca"></span>
+                </div>
+        
+                <!-- Botão para acionar o menu - mobile -->
+                <div class="menu-toggle-mobile" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        
+                <!-- Overlay (sobreposição) - para fazer o menu toggle -->
+                <div class="overlay" id="overlay"></div>
+        
+                <!-- Menu navegação mobile - barra lateral (sidebar) -->
+                <nav class="sidebar" id="sidebar">
+                    <!-- Header da barra lateral -->
+                    <div class="header-sidebar">
+                        <!-- Botão do darkmode -->
+                        <button type="button" class="button-darkmode" id="themeMobileButton">
+                            <span><img src="images/sunny.svg" alt="icone de sol para modo claro"></span>
+                            <span><img src="images/moon.svg" alt="icone lua para modo escuro"></span>
+                        </button>
+                        <h2 class="sidebar-title">Gracielle</h2>
+                        <p>Seja Bem-vindo!</p>
+                    </div>
+        
+        
+                    <!-- Menu navegação do header -->
+                    <ul class="menu-mobile">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Projetos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        
+            <!-- Menu principal -->
+            <nav class="nav-main">
+                <div class="logotipo" id="themeLogo">
+                    <span><img src="images/Vector.png" alt="logomarca"></span>
+                    <span><img src="images/vectorDark.png" alt="logomarca"></span>
+                </div>
+        
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Projetos</a></li>
+                </ul>
+        
+                <button type="button" class="button-darkmode" id="themeMainButton">
                     <span><img src="images/sunny.svg" alt="icone de sol para modo claro"></span>
-                
                     <span><img src="images/moon.svg" alt="icone lua para modo escuro"></span>
                 </button>
-                <h2>Gracielle</h2>
-                <p>Seja Bem-vindo!</p>
-            </div>
-    
-            <ul class="nav-menu-mobile">
-                <li><a href="index.html" class="ancor-mobile">Home</a></li>
-                <li><a href="index.html" class="ancor-mobile">Projeto</a></li>
-            </ul>
-        </nav>
+            </nav>
+        </header>
+        
+        
+        <!-- Campo: Main -->
+        <main>
+            <section id="hero">
+                <article class="article-page-contact">
+                    <h2 class="title-page-contact">Entre em Contato<span>.</span></h2>
+                    <p>Interessado em criar algo juntos? Sou estudante e estou em busca de oportunidades.</p>
+                    <p>Entre em contato e responderei o mais breve possível.</p>
+        
+                    <div class="email-page-contact">
+                        <a href="mailto:graciellecosta20@gmail.com" class="email-contact">
+                            <div class="icon-contact">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" class="svg-icon">
+                                    <path
+                                        d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z">
+                                    </path>
+                                </svg>
+                            </div>
+        
+                            <div class="name-email">
+                                <p>graciellecosta20@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </article>
+        
+                <article class="image-space">
+                    <div class="image-hero">
+                        <img src="images/foto-do-perfil.png" alt="foto do perfil de Gracielle Costa" class="image-profile">
+                        <img src="images/Frame 89.png" alt="frame" class="frame-profile">
+                    </div>
+                </article>
+            </section>
+        </main>
     </div>
-    
-    
-    <!-- Campo: header -->
-    <header>
-        <!-- Menu principal -->
-        <nav class="nav-menu">
-            <div class="img-logotipo" id="theme-logo">
-                <span><img src="images/Vector.png" alt="logomarca"></span>
-                <span><img src="images/vectorDark.png" alt="logomarca"></span>
-            </div>
-            <ul class="list-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Projetos</a></li>
-                <li><a href="index.html">Experiência</a></li>
-                <li><a href="index.html">Skills</a></li>
-                <li><a href="index.html">Sobre mim</a></li>
-            </ul>
-            <button id="theme" class="button-icon">
-                <span><img src="images/sunny.svg" alt="icone de sol para modo claro"></span>
-            
-                <span><img src="images/moon.svg" alt="icone lua para modo escuro"></span>
-            </button>
-        </nav>
-    </header>
-    <main>
-        <section id="hero">
-            <article class="article-home">
-                <h2 class="h2-page-contact">Entre em Contato<span>.</span></h2>
-                <p>Interessado em criar algo juntos? Sou estudante e estou em busca de oportunidades.</p>
-                <p>Entre em contato e responderei o mais breve possível.</p>
-
-                <div class="content-page2">
-                    <a href="mailto:graciellecosta20@gmail.com" class="email-ancor">
-                        <div class="icon-envelope">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none" class="svg-icon">
-                                <path
-                                    d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z">
-                                </path>
-                            </svg>
-                        </div>
-
-                        <div>
-                            <p>graciellecosta20@gmail.com</p>
-                        </div>
-                    </a>
-                </div>
-            </article>
-            <article class="article-frame">
-                <div class="frame-perfil">
-                    <img src="images/foto-do-perfil.png" alt="foto do perfil de Gracielle Costa" class="image-perfil">
-                    <img src="images/Frame 89.png" alt="frame" class="frame">
-                </div>
-            </article>
-        </section>
-    </main>
 
     <script src="index.js"></script>
 </body>
-</html>
