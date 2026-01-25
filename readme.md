@@ -47,7 +47,7 @@ O layout foi pensado para funcionar de forma consistente em **desktop, tablet e 
 - Ícones em SVG
 - Layout mobile-first adaptado para desktop
 
-## 📂 Estrutura de Pastas
+## 📂 Estrutura dos Arquivos
 
 ```bash
 portfolio/
